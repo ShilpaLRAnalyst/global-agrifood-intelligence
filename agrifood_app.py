@@ -85,7 +85,8 @@ if app_mode == "📍 Tab 1: Macroeconomic Archetypes":
     
     fig_map = px.choropleth(
         df_app,
-        locations="Area_Code_ISO3",        
+        locations="Area", 
+        locationmode="country names",
         color="Archetype_Name",            
         hover_name="Area",                 
         projection="natural earth",
