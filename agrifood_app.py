@@ -220,7 +220,7 @@ if app_mode == "📍 Tab 1: Macroeconomic Archetypes":
 
 elif app_mode == "🛞 Tab 2: Supply Chain Simulator":
     st.title("🛞 Supply Chain Stress-Test Simulator")
-    st.markdown("Live infrastructure optimization simulation and machine learning cluster re-classification.")
+    st.markdown("Live infrastructure optimization simulation and real-time carbon variance simulation")
     st.write("---")
     
     # ─── STEP 1: TARGET COUNTRY SELECTION & METADATA LEDGER ───
