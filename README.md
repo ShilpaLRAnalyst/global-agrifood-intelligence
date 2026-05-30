@@ -41,7 +41,7 @@ The algorithm successfully segmented the 165 nations into four distinct global a
 | **0** | Industrialized & Supply Chain Input-Dominant Systems | High agro-industrial footprint; heavily reliant on intensive synthetic inputs and modernized supply chain logistics. |
 | **1** | Diversified Agribusiness & Emerging Market Powerhouses | Rapidly scaling agricultural sectors blending massive primary production volumes with evolving processing industries. |
 | **2** | Primary Production & Traditional Agrarian Economies | Emissions heavily dominated by Farm Gate activities; characteristic of localized, production-heavy, and traditional agricultural practices. |
-| **3** | Advanced High-Tech & Post-Industrial Agrifood Systems | Decoupled primary production emissions with highly optimized, service-and-retail-heavy food system profiles. |
+| **3** | Advanced High-Tech & Post-Industrial Agrifood Systems | Driven by intensive processing and manufacturing, balanced by mature retail distribution and stable primary farm production. |
 
 ---
 
@@ -53,8 +53,7 @@ To keep the repository clean, the codebase is separated into data processing and
 global-agrifood-intelligence/
 ├── data/
 │   └── final_food_system_clusters.csv          # Processed dataset with calculated cluster badges
-├── models/
-│   └── trained_kmeans_model.joblib            # Pre-trained K-Means model object
+|              
 ├── agrifood_app.py                            # Interactive Streamlit application code
 ├── requirements.txt                           # Libraries required to run the dashboard
 └── Global_Agri_Food_Supply_Chains_A_Decadal_Macro_Economic_Archetype_Analysis.ipynb # Core ML pipeline
