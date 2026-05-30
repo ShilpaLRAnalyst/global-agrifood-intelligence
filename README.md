@@ -30,7 +30,7 @@ The model evaluates greenhouse gas (GHG) emissions across the entire four-sector
 4. **Consumer & Retail** (Waste management, household consumption, retail footprint)
 
 ### 2. Hyperparameter Tuning & Dimensionality Reduction
-* **Choosing $K$:** Initial inertia screening via the **Elbow Method** indicated an optimal inflection point at $K = 4$, which was rigorously validated using **Silhouette Analysis** to ensure maximum intra-cluster density.
+* **Strategic Cluster Selection ($K=4$):** While initial metrics via the Elbow Method and Silhouette Analysis indicated a tighter mathematical clustering structure at $K=3$, the final model configuration was advanced to $K=4$. This deliberate adjustment was made to better capture the nuanced macroeconomic variations among the 165 nations, ensuring a more practical and realistic distribution of global agrifood systems for the simulation engine.
 * **Variance Explained:** To visualize the high-dimensional supply chain data, **Principal Component Analysis (PCA)** was applied. **99.2% of total variance** was successfully captured by the primary components, proving the structural distinctions are highly robust.
 
 ### 3. Cluster Structural Archetypes
