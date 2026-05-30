@@ -191,7 +191,11 @@ if app_mode == "📍 Tab 1: Macroeconomic Archetypes":
         title="Composition of Raw Volume (kt)", 
         color_discrete_sequence=px.colors.qualitative.Safe
     )
-    fig_pie.update_layout(showlegend=False, margin=dict(t=30, b=10, l=10, r=10))
+    fig_pie.update_layout(showlegend=True, margin=dict(t=30, b=10, l=10, r=10),
+                          legend=dict(orientation="h",yanchor="top",y=-0.1,xanchor="center",
+                                      x=0.5)
+                         )
+    fig_pie.update_traces(textinfo='percent',textfont=dict(size=14,color='white',family='sans-serif'))
     
     fig_bar = px.bar(
         chart_df, 
