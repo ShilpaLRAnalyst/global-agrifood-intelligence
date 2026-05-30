@@ -12,7 +12,6 @@ This repository contains an end-to-end data project designed to analyze greenhou
 This project decouples data processing from the presentation layer to ensure modularity and scalability.
 
 * **Data Processing & ML Pipeline:** Python, Pandas, NumPy, Scikit-Learn (K-Means, PCA)
-* **Model Serialization:** Joblib
 * **Deployment & UI:** Streamlit (Python-based interactive dashboard)
 * **Data Visualization:** Plotly, Matplotlib, Seaborn
 
@@ -34,7 +33,7 @@ The model evaluates greenhouse gas (GHG) emissions across the entire four-sector
 * **Variance Explained:** To visualize the high-dimensional supply chain data, **Principal Component Analysis (PCA)** was applied. **99.2% of total variance** was successfully captured by the primary components, proving the structural distinctions are highly robust.
 
 ### 3. Cluster Structural Archetypes
-The algorithm successfully segmented the 165 nations into four distinct global archetypes, driven heavily by variances in **Farm Gate** and **Agro-Industrial** emissions:
+The algorithm successfully segmented the 165 nations into four distinct global archetypes, driven heavily by structural variances across all stages of the agrifood supply chain:
 
 | Cluster | Archetype Name | Core Characteristics |
 | :---: | :--- | :--- |
