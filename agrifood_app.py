@@ -99,9 +99,11 @@ if app_mode == "📍 Tab 1: Macroeconomic Archetypes":
             title="Supply Chain Structural Archetypes",
             orientation="h",
             yanchor="top",
-            y=-0.05,
+            y=-0.08,
             xanchor="center",
-            x=0.5
+            x=0.5,
+            font=dict(size=13,color="white"),
+            tracegroupgap=10
         )
     )
     
