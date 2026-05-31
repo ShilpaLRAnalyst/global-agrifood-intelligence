@@ -1,7 +1,7 @@
 # 🌍 Global Agri-Food Intelligence Platform
 > **An Independent Data Science & Interactive Simulation Project**
 
-[Live Streamlit App Link](https://global-agrifood-intelligence-3x3c8mujctpycqx8u3oetx.streamlit.app/) | [Jupyter Notebook Pipeline](https://nbviewer.org/github/ShilpaLRAnalyst/global-agrifood-intelligence/blob/main/Global_Agri_Food_Supply_Chains_A_Decadal_Macro_Economic_Archetype_Analysis.ipynb)
+[Live Streamlit App Link](https://global-agrifood-intelligence-3x3c8mujctpycqx8u3oetx.streamlit.app/) | [Jupyter Notebook Pipeline](https://nbviewer.org/github/ShilpaLRAnalyst/global-agrifood-intelligence/blob/main/Global_Agri_Food_Supply_Chains_A_Decadal_Macro_Economic_Archetype_Analysis.ipynb) | [Google Colab Mirror](https://colab.research.google.com/drive/1lGoPeHN7-w1htfgYYUel28KJNbeiYfsY?usp=sharing)
 
 This repository contains an end-to-end data project designed to analyze greenhouse gas (GHG) emissions across global agrifood supply chains. Using historical data for 165 countries, the project uses unsupervised machine learning to group nations into different structural archetypes and features an interactive web dashboard for real-time scenario simulation.
 
