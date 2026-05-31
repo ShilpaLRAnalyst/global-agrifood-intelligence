@@ -5,6 +5,8 @@
 
 This repository contains an end-to-end data project designed to analyze greenhouse gas (GHG) emissions across global agrifood supply chains. Using historical data for 165 countries, the project uses unsupervised machine learning to group nations into different structural archetypes and features an interactive web dashboard for real-time scenario simulation.
 
+ 📊 **Data Source:** Primary macro-economic emissions data sourced from the UN Food and Agriculture Organization (FAO), utilized via the global agrifood dataset compiled by Alessandro on Kaggle.
+
 ---
 
 ## 🛠️ Architecture & Tech Stack
