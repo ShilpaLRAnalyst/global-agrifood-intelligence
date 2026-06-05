@@ -77,7 +77,7 @@ except FileNotFoundError:
 # ==========================================
 if app_mode == "📍 Tab 1: Macroeconomic Archetypes":
     st.title("📍 Global Macroeconomic Archetypes")
-    st.markdown("An interactive carbon-emissions-based spatial audit of global food supply chain structures independent of population scale.")
+    st.markdown("An interactive emissions-based spatial audit of global food supply chain structures independent of population scale.")
     st.write("---")
     
     # ─── PART 2: INTERACTIVE MAP ───
