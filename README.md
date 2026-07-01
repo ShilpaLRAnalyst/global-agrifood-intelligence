@@ -44,6 +44,22 @@ The K-Means algorithm segmented the 165 nations into four distinct emission prof
 | **2** | Primary Production & Traditional Agrarian Economies |Emissions are heavily dominated by Farm Gate (on-farm) activities, reflecting localized, traditional agricultural practices. |
 | **3** | Advanced High-Tech & Post-Industrial Agrifood Systems | Driven by downstream processing, manufacturing, and mature retail distribution and stable primary farm production. |
 
+## 🎛️ Interactive Supply Chain Simulator
+
+Alongside the machine learning profiles, I built a live **Supply Chain Simulator** (Tab 2) to explore how policy changes or operational shifts affect emissions in real time. 
+
+Instead of looking at static charts, users can interact directly with the data by adjusting sliders to see immediate results.
+
+### How the Simulator Works:
+* **Sector-Specific Sliders:** Users can manually scale activities up or down across four main supply chain areas: *Farm Gate Optimization*, *Logistics & Processing*, *Consumer Retail*, and *Industrial Inputs*.
+* **On-the-Fly Calculations:** Moving a slider instantly adjusts that sector's emissions based on the selected growth or reduction percentage compared to the historical baseline.
+* **Real-Time Output:** The dashboard recalculates and updates three core metrics automatically:
+  * **Baseline Total Emissions:** The original historical total.
+  * **Simulated New Total:** The updated total reflecting the current slider settings.
+  * **Net Carbon Variance:** The exact difference in kilotons (kt) and the relative percentage change (e.g., -26.54%).
+
+This addition takes the insights from our clustering model and turns them into a practical, interactive tool for testing different climate strategies.
+
 ---
 
 ## 📂 Project Directory Structure
