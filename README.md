@@ -3,7 +3,7 @@
 
 [Live Streamlit App Link](https://global-agrifood-intelligence-3x3c8mujctpycqx8u3oetx.streamlit.app/) | [Jupyter Notebook Pipeline](https://nbviewer.org/github/ShilpaLRAnalyst/global-agrifood-intelligence/blob/main/Global_Agri_Food_Supply_Chains_A_Decadal_Macro_Economic_Archetype_Analysis.ipynb) | [Google Colab Mirror](https://colab.research.google.com/drive/1lGoPeHN7-w1htfgYYUel28KJNbeiYfsY?usp=sharing)
 
-This repository contains an end-to-end data project designed to analyze greenhouse gas (GHG) emissions across global agrifood supply chains. Using historical data for 165 countries, the project uses unsupervised machine learning to group nations into different structural archetypes and features an interactive web dashboard for real-time scenario simulation.
+An end-to-end data science project built to analyze greenhouse gas (GHG) emissions across global agrifood supply chains. Using historical data for 165 countries, the pipeline applies unsupervised machine learning to cluster nations into distinct emission profiles and features an interactive Streamlit dashboard for real-time scenario simulation.
 
  📊 **Data Source:** Primary macro-economic emissions data sourced from the UN Food and Agriculture Organization (FAO), utilized via the global agrifood dataset compiled by Alessandro on Kaggle.
 
@@ -11,7 +11,7 @@ This repository contains an end-to-end data project designed to analyze greenhou
 
 ## 🛠️ Architecture & Tech Stack
 
-This project decouples data processing from the presentation layer to ensure modularity and scalability.
+Built with a decoupled architecture separating data processing from the presentation layer to ensure clean modularity and scalability.
 
 * **Data Processing & ML Pipeline:** Python, Pandas, NumPy, Scikit-Learn (K-Means, PCA)
 * **Deployment & UI:** Streamlit (Python-based interactive dashboard)
@@ -31,18 +31,18 @@ The model evaluates greenhouse gas (GHG) emissions across the entire four-sector
 4. **Consumer & Retail** (Waste management, household consumption, retail footprint)
 
 ### 2. Hyperparameter Tuning & Dimensionality Reduction
-* **Strategic Cluster Selection ($K=4$):** While initial metrics via the Elbow Method and Silhouette Analysis indicated a tighter mathematical clustering structure at $K=3$, the final model configuration was advanced to $K=4$. This deliberate adjustment was made to better capture the nuanced macroeconomic variations among the 165 nations, ensuring a more practical and realistic distribution of global agrifood systems for the simulation engine.
+* **Strategic Cluster Selection ($K=4$):** Although the Elbow Method and Silhouette Analysis suggested $K = 3$, the final configuration was set to $K = 4$. This adjustment was chosen to better capture distinct macroeconomic variations across the 165 nations, providing a more practical and insightful distribution of global agrifood systems for the simulation dashboard.
 * **Variance Explained:** To visualize the high-dimensional supply chain data, **Principal Component Analysis (PCA)** was applied. **99.2% of total variance** was successfully captured by the primary components, proving the structural distinctions are highly robust.
 
 ### 3. Cluster Structural Archetypes
-The algorithm successfully segmented the 165 nations into four distinct global archetypes, driven heavily by structural variances across all stages of the agrifood supply chain:
+The K-Means algorithm segmented the 165 nations into four distinct emission profiles based on their agrifood supply chain characteristics:
 
 | Cluster | Archetype Name | Core Characteristics |
 | :---: | :--- | :--- |
-| **0** | Industrialized & Supply Chain Input-Dominant Systems | High agro-industrial footprint; heavily reliant on intensive synthetic inputs and modernized supply chain logistics. |
-| **1** | Diversified Agribusiness & Emerging Market Powerhouses | Rapidly scaling agricultural sectors blending massive primary production volumes with evolving processing industries. |
-| **2** | Primary Production & Traditional Agrarian Economies | Emissions heavily dominated by Farm Gate activities; characteristic of localized, production-heavy, and traditional agricultural practices. |
-| **3** | Advanced High-Tech & Post-Industrial Agrifood Systems | Driven by intensive processing and manufacturing, balanced by mature retail distribution and stable primary farm production. |
+| **0** | Industrialized & Supply Chain Input-Dominant Systems | High agro-industrial footprint; heavily driven by synthetic inputs (fertilizers) and modernized supply chain logistics. |
+| **1** | Diversified Agribusiness & Emerging Market Powerhouses |High primary production volumes mixed with rapidly expanding food processing industries. |
+| **2** | Primary Production & Traditional Agrarian Economies |Emissions are heavily dominated by Farm Gate (on-farm) activities, reflecting localized, traditional agricultural practices. |
+| **3** | Advanced High-Tech & Post-Industrial Agrifood Systems | Driven by downstream processing, manufacturing, and mature retail distribution and stable primary farm production. |
 
 ---
 
