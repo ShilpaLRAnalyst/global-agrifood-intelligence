@@ -264,11 +264,13 @@ elif app_mode == "🛞 Tab 2: Supply Chain Simulator":
     st.info("💡 Scale sectors below. Dragging to the left (e.g., 80%) simulates a reduction; dragging right simulates growth.")
     st.markdown("""
 ### 📋 Quick Simulation Guide
-**Objective:** Evaluate how targeted sector modifications diverge from the historical baseline to assess supply chain resilience and carbon risk.
+**Objective:** Test hypothetical climate policies or industry shifts by scaling sector emissions up or down against the historical baseline (100%).
 * **The Baseline (100%):** Represents the historical, un-modified decadal emissions profile for the selected sector.
-* **Simulating Interventions (Slide Left):** Drag below 100% to test policy-driven optimization—such as adopting cold-chain solar arrays or converting transit fleets to renewables.
-* **Simulating Supply Risk (Slide Right):** Drag above 100% to stress-test system vulnerabilities against industrial expansion or increased consumer demand.
-* **Tracking Impact:** The **Live Simulated Scenario Impact** panel below automatically calculates the aggregate net difference in kilotons (kt) and absolute percentage variance on the fly.
+#### 💡 How to run a simulation scenario:
+* **To simulate a 40% emissions reduction** (e.g., implementing solar cold-chains or fleet electrification): Drag that sector's slider **left to 60** (100% baseline - 40% cut).
+* **To simulate a 20% growth in supply chain demand** (e.g., rapid industrial expansion or population growth): Drag the slider **right to 120** (100% baseline + 20% expansion).
+#### 📊 Interpreting the Live Impact Panel:
+Once adjusted, the dashboard dynamically aggregates the changes across all sectors to display the **Net Carbon Variance**. This shows you the exact volume of carbon mitigated or added in kilotons (kt), giving you an immediate verdict on the efficacy of your simulated policy.
 """)
     st.write("---")
     col_slide1, col_slide2 = st.columns(2)
