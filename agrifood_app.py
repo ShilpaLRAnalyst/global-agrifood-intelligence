@@ -265,7 +265,7 @@ elif app_mode == "🛞 Tab 2: Supply Chain Simulator":
     st.markdown("""
 ### 📋 Quick Simulation Guide
 **Objective:** Test hypothetical climate policies or industry shifts by scaling sector emissions up or down against the historical baseline (100%).
-* **The Baseline (100%):** Represents the historical, un-modified decadal emissions profile for the selected sector.
+**The Baseline (100%):** Represents the historical, un-modified decadal emissions profile for the selected sector.
 #### 💡 How to run a simulation scenario:
 * **To simulate a 40% emissions reduction** (e.g., implementing solar cold-chains or fleet electrification): Drag that sector's slider **left to 60** (100% baseline - 40% cut).
 * **To simulate a 20% growth in supply chain demand** (e.g., rapid industrial expansion or population growth): Drag the slider **right to 120** (100% baseline + 20% expansion).
