@@ -114,7 +114,8 @@ if app_mode == "📍 Tab 1: Macroeconomic Archetypes":
     st.subheader("🔍 Country Executive Profile Explorer")
     
     country_list = sorted(df_app['Area'].unique())
-    selected_country = st.selectbox("Select a Country for an Executive Audit:", country_list)
+    nz_index = country_list.index("New Zealand") if "New Zealand" in country_list else 0
+    selected_country = st.selectbox("Select a Country for an Executive Audit:", country_list,index=nz_index)
     
     country_data = df_app[df_app['Area'] == selected_country].iloc[0]
     
@@ -226,7 +227,8 @@ elif app_mode == "🛞 Tab 2: Supply Chain Simulator":
     # ─── STEP 1: TARGET COUNTRY SELECTION & METADATA LEDGER ───
     # Safely extract unique territories available within the loaded dataframe asset
     sim_country_list = sorted(df_app['Area'].unique())
-    sim_country = st.selectbox("Select Target Country for Policy Simulation:", sim_country_list, key="sim_country_select")
+    nz_index = sim_country_list.index("New Zealand") if "New Zealand" in sim_country_list else 0
+    sim_country = st.selectbox("Select Target Country for Policy Simulation:", sim_country_list,index=nz_index, key="sim_country_select")
     
     # Isolate the original row vector for mathematical baseline manipulation
     sim_data = df_app[df_app['Area'] == sim_country].iloc[0]
