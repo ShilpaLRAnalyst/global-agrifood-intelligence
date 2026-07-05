@@ -271,7 +271,7 @@ The Baseline (100%) represents the historical, un-modified decadal emissions pro
 #### 🔍 Try a Real-World Scenario:
 * **The Hypothesis:** Studies show that combining targeted field-level interventions—such as scaling methane-reducing livestock feed, optimizing nitrogen fertilizer usage, and implementing water-saving rice paddy management—can collectively mitigate agricultural **Farm Gate** emissions by 40%.
 * **The Action:** To simulate the cumulative national impact of these agricultural practices, find the first slider (**Farm Gate Optimization**) and drag it **left to 60** (100% baseline - 40% reduction).
-* **The Result:** Check the **Live Simulated Scenario Impact** panel below to evaluate how this farm-level sector optimization reshapes the entire country's aggregated carbon ledger.
+* **The Result:** Check the **Live Simulated Scenario Impact** panel below to evaluate how this farm-level sector optimization reshapes the entire country's aggregated agrifood carbon ledger.
 #### 📊 Interpreting the Metrics:
 The dashboard dynamically aggregates your adjustments across all sectors to calculate the **Net Carbon Variance**. This gives you an immediate, data-driven look at how effective these regional policy choices actually are.
 """)
